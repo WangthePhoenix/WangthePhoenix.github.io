@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Super RPG</title>
+    
+    
+    
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+    
+  </head>
+
+  <body>
+
+    <button id="nameButton" onclick="heromessage();">Name the Hero.</button>
+
+<div id="profile"></div>
+<b><div id="hero">
+  </div></b>
+<!-- Class -->
+<div id=classSelec>
+  <div><u>Choose Your Class</u></div>
+
+    <ul id="classDisplay">
+      <li class="indivClass">
+        <button class="classButton" id="fighterButton" onclick="chooseFighter();"></button>
+      </li>
+      <li class="indivClass">
+        <button class="classButton" id="paladinButton" onclick="choosePaladin();"></button>
+      </li>
+      <li class="indivClass">
+        <button class="classButton" id="specialistButton" onclick="chooseSpecialist();"></button>
+      </li>
+      <li class="indivClass">
+        <button class="classButton" id="mageButton" onclick="chooseMage();"></button>
+      </li>
+      <li class="indivClass">
+        <button class="classButton" id="warriorButton" onclick="chooseWarrior();"></button>
+      </li>
+      <li class="indivClass">
+        <button class="classButton" id="assassinButton" onclick="chooseAssassin();"></button>
+      </li>
+    </ul>
+  <button id="classConfirm" onclick="lockIn();">Confirm Selection?</button>
+</div>
+
+
+
+<!-- Status -->
+<div id="currentClass"></div>
+<div id="hotStat">
+  <div><u>Status Menu</u></div>
+  <div id="heroHealth"></div>
+  <div id="heroPP"></div>
+  <div id="heroMana"></div>
+</div>
+<!-- Menu open Button -->
+
+<button id="menuButton" onclick="openMenu();">Menu</button>
+<!-- Text that displays on the top of the menu -->
+<div id="menuText" class="menuText"><u>Menu</u></div>
+<div id="statText" class="menuText"><u>Statistics</u></div>
+<div id="invenText" class="menuText"><u>Inventory</u></div>
+<div id="equipText" class="menuText"><u>Equipment</u></div>
+<!-- Like, 99% of the menu or something -->
+<div id="menu">
+    <div id="menuOutie">
+      <!-- Open stats -->
+      <button id="statButton" onclick="openStat();">Stats</button>
+      <button id="invenButton" onclick="openInven();">Inventory</button>
+      <button id="equipButton" onclick="openEquip();">Equip Items</button>
+    </div>
+    <div id="inStat" class="menuInnie">
+      <!-- Character Statistics -->
+      <div id="maxHP"></div>
+      <div id="maxPP"></div>
+      <div id="maxMP"></div>
+      <div id="heroAttack"></div>
+      <div id="heroDefense"></div>
+      <div id="heroSpeed"></div>
+      <div id="luckMsg"></div>
+      <button class="exitInnie" onclick="exitInnie();">Exit Stats</button>
+    </div>
+    <div id="inInven" class="menuInnie">
+      <!-- Inside Inventory -->
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <button class="exitInnie" onclick="exitInnie();">Exit Inventory</button>
+    </div>
+    <div id="inEquip" class="menuInnie">
+      <!-- Inside Equipping Area -->
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <button class="exitInnie" onclick="exitInnie();">Exit Equipment</button>
+    </div>
+</div>
+
+
+
+<!-- End of Status -->
+<div id="acts">
+  <div><u>Actions</u></div>
+<!-- Outside-Battle Action Buttons -->
+    <div id="outTownAct">
+      <button id="townButton" onclick="intoTown();">Go Into Town</button>
+
+      <!-- <button id="leaveButton" onclick="exitTown();">Leave the Town</button> -->
+      <!-- Get Encounter Button -->
+      <button id="dangerButton" onclick="battle();">Explore Dangerous Areas</button>
+    </div>
+    <div id="battleAction">
+      <!-- Inside of battle actions -->
+      <button id="attackButton" onclick="attack();">Basic Attack</button>
+      <button id="runButton" onclick="run();">Run from the Battle</button>
+      <button id="endButton" onclick="endBattle();">End Battle</button>
+    </div>
+</div>
+
+<div id="gg">GAME OVER</div>
+
+<div id="fight">
+  <div id="monsterPic"></div>
+</div>
+
+<div><u>Messages: </u></div>
+<div id="msg"></div>
+<div id="msg1"></div>
+
+    
+        <script src="js/index.js"></script>
+
+    
+    
+  </body>
+</html>

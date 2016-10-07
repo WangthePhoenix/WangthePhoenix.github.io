@@ -1,0 +1,150 @@
+body {
+  background-image: url(images/weirdbackground.png);
+}
+
+/* character name font styling */
+#hero {
+	font-size: 32px;
+	font-family: cursive;
+	color: #4d2800;
+}
+
+/* a collective of individual class selection pictures */
+.classImg {
+  height: 200px;
+  width: 200px;
+}
+
+.classButton {
+  height: 200px;
+  width: 200px;
+}
+/* individual buttons */
+#fighterButton {
+	background-image: url(images/Fighter.png);
+	-webkit-transition: background-image 0.5s;
+	transition: background-image 0.5s;
+}
+#fighterButton:hover {
+	background-image: url(images/Fighter1.png);
+}
+#paladinButton {
+	background-image: url(images/Paladin.png);
+	-webkit-transition: background-image 0.5s;
+	transition: background-image 0.5s;
+}
+#paladinButton:hover {
+	background-image: url(images/Paladin1.png);
+}
+#specialistButton {
+	background-image: url(images/Specialist.png);
+	-webkit-transition: background-image 0.5s;
+	transition: background-image 0.5s;
+}
+#specialistButton:hover {
+	background-image: url(images/Specialist1.png);
+}
+#mageButton {
+	background-image: url(images/Mage.png);
+	-webkit-transition: background-image 0.5s;
+	transition: background-image 0.5s;
+}
+#mageButton:hover {
+	background-image: url(images/Mage1.png);
+}
+#warriorButton {
+	background-image: url(images/Warrior.png);
+	-webkit-transition: background-image 0.5s;
+	transition: background-image 0.5s;
+}
+#warriorButton:hover {
+	background-image: url(images/Warrior1.png);
+}
+#assassinButton {
+	background-image: url(images/Assassin.png);
+	-webkit-transition: background-image 0.5s;
+	transition: background-image 0.5s;
+}
+#assassinButton:hover {
+	background-image: url(images/Assassin1.png);
+}
+
+/* a collection of all <li> elements in class selection */
+.indivClass {
+	display: inline;
+}
+
+/* the entire class selection menu */
+#classSelec {
+	display: none;
+}
+
+/* envelops all class selection pictures */
+#classDisplay {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* class selection confirm button */
+#classConfirm {
+	display: none;
+}
+
+/* hot status box */
+#hotStat {
+	display: none;
+}
+
+/* venture into danger button */
+#acts {
+	display: none;
+}
+
+/* menu functionality */
+#menuButton {
+	display: none;
+}
+
+#menuOutie {
+	display: none;
+}
+
+.menuInnie {
+	display: none;
+}
+
+.menuText {
+	display: none;
+}
+
+.inBattleAct {
+	display: none;
+}
+
+/*
+#leaveButton {
+	display: none;
+}
+*/
+
+#attackButton {
+	display: none;
+}
+
+#runButton {
+	display: none;
+}
+
+#gg {
+	display: none;
+	font-size: 64px;
+	font-style: impact;
+}
+
+#endButton {
+	display: none;
+}
+/*  */
+/*  */
+/*  */
